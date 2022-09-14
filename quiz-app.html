@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./quiz-app.css"/>
+  </head>
+  <body>
+    <div class="container" id="app_intro">
+        <h1>Quiz App</h1>
+        <button class="btn btn-primary" id="start_btn">Start</button>
+    </div>
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Math Quiz</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <li>Do not copy</li>
+              <li>Do not carry mobile phones</li>
+              <li>use of calculator is prohibited</li>
+              <li>Each Questions consists of 1 marks</li>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modal-close_btn">Close</button>
+              <button type="button" class="btn btn-primary" id="modal-start_btn">Start</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+        <div id="main-card">
+          <div class="container" > 
+
+            <div class="card" id="quiz-card">
+  
+              <h5 class="card-header" id="questionNo">Question 1</h5>
+  
+              <div class="card-body">
+  
+                <h5 class="card-title" id="question">addition of 5 and 6 is ?</h5>
+  
+                <div class="card-text">
+                  <input type="radio" id="option1" name="ans" value="14">
+                  <label for="option1" class="option">14</label><br>
+                </div>
+  
+                <div class="card-text">
+                  <input type="radio" id="option2" name="ans" value="10">
+                  <label for="option2" class="option">10</label><br>
+                </div>
+  
+                <div class="card-text">
+                  <input type="radio" id="option3" name="ans" value="17">
+                  <label for="option3" class="option">17</label><br>
+                </div>
+  
+                <div class="card-text">
+                  <input type="radio" id="option4" name="ans" value="11">
+                  <label for="option4" class="option">11</label><br>
+                </div>
+  
+                <a href="#" class="btn btn-primary" id="next">Next</a>
+                <a href="#" class="btn btn-primary" id="submit">Submit</a>
+              </div>
+            </div>
+  
+            <div class="card" id="score-card">
+  
+              <h5 class="card-header">Thank You</h5>
+  
+              <div class="card-body">
+                <div id="score"></div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  <script type="module" src="./script/quiz-app.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</html>

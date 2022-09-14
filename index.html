@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="qapp">
+      <div id="main-app">
+        <h1>Quiz App</h1>
+
+        <div id="signin">
+          <p id="error"></p>
+          <input type="text" placeholder="Username" id="username" />
+          <input type="password" placeholder="Password" id="password" />
+          <button type="button" class="qapp_button" id="login_btn">
+            Login
+          </button>
+        </div>
+
+        <p>Don't have an account</p>
+        <a href="#" class="qapp_button" id="signup_btn">SignUp</a>
+      </div>
+    </div>
+
+    <div id="modal_container">
+      <div id="modal_signup">
+        <a href="#" id="modal_close">X</a>
+        <hr />
+        <form>
+          <input type="text" placeholder="UserName" required />
+          <input type="text" placeholder="EmailId" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="ConformPassword" required />
+          <button type="submit">SignUp</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script/index.js"></script>
+</html>
