@@ -25,6 +25,7 @@ login.addEventListener('click', () => {
     }
     else{
         error.innerHTML = "Username or Password is invalid";
+        alert(`Username:- Akash99 \nPassword:- 1234`)
     }
 });
 
